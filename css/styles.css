@@ -1,13 +1,11 @@
 /*
 COLOR PALETTE
-https://coolors.co/333333-d5a021-fbfbfb-739e82-58a4b0
+https://coolors.co/171738-fbfbfb-838996-004f2d-ff9f1c
 #333333 - Jet
 #D5A021 - Goldenrod
 #FBFBFB - White
-#343434 - dark gray - almost black
-#739E82 - Russian Green
-58A4B0 - Cadet Blue
-#F7FFF7 - almost white
+#171738 - Space Cadet
+#838996 - Roman Silver
 */
 
 
@@ -21,7 +19,7 @@ html {
 }
 
 body {
-  color: #343434;
+  color: #333333;
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
@@ -65,7 +63,7 @@ h3 {
   margin: 0;
 }
 .divider > section {
-  border-bottom: 1px dashed #343434;
+  border-bottom: 1px dashed #333333;
   padding: 25px 0;
 }
 .divider > section:last-of-type {
@@ -76,7 +74,7 @@ h3 {
 /* Profile
 ------------------------------------*/
 header {
-  background: #333333;
+  background: #171738;
   color: #FBFBFB;
 }
 
@@ -84,10 +82,10 @@ header {
 /* Projects
 ------------------------------------*/
 .projects {
-  background: #F7FFF7;
+  background: #FBFBFB;
 }
 .projects a {
-  color: #343434;
+  color: #333333;
 }
 .projects .btn {
   color: #FBFBFB;
@@ -111,7 +109,7 @@ header {
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  background: #739E82;
+  background: #838996;
 }
 
 
@@ -133,7 +131,7 @@ header {
 ------------------------------------*/
 footer {
   background: #333333;
-  color: #F7FFF7;
+  color: #FBFBFB;
 }
 .contact-list {
   list-style-type: none;
