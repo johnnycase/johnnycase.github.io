@@ -1,11 +1,13 @@
 /*
 COLOR PALETTE
-https://coolors.co/171738-fbfbfb-838996-004f2d-ff9f1c
+https://coolors.co/13293d-e3b23c-3b8ea5-ab3428-e8f1f2
 #333333 - Jet
-#D5A021 - Goldenrod
 #FBFBFB - White
-#171738 - Space Cadet
-#838996 - Roman Silver
+#13293D - Prussian Blue
+#E3B23C - Maximum Yellow Red
+#3B8EA5 - Blue Munsell
+#AB3428 - Firebrick
+#E8F1F2 - Azure X 11 Web Color
 */
 
 
@@ -30,7 +32,7 @@ img {
   width: 300px;
 }
 a {
-  color: #D5A021;
+  color: #E3B23C;
 }
 a:hover {
   text-decoration: none;
@@ -74,7 +76,7 @@ h3 {
 /* Profile
 ------------------------------------*/
 header {
-  background: #171738;
+  background: #13293D;
   color: #FBFBFB;
 }
 
@@ -109,7 +111,7 @@ header {
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  background: #838996;
+  background: #E8F1F2;
 }
 
 
