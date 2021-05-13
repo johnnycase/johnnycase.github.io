@@ -1,18 +1,24 @@
 ---
 layout: page
-title: About
+title: Projects
 permalink: /projects/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+#### Thank you for visiting my portfolio page, please find examples of my work here.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+---
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+##### Technical Documentation
+
+- [How To Setup a File Transfer Script Using Psftp](docs/PsftpAutomation.pdf)
+- [File Transfer Client and Protocol Documentation](docs/FileTransferDoc.pdf)  
+- [GPG Encryption Setup Documentation](docs/GPGEncryptionDoc.pdf)  
+- [How to create a csv extract file with a SQL query](docs/Createcsvfromsqlquery.doc.pdf)  
+- [How to configure an IIS web application](docs/HowtoConfigureanIISWebApplication.pdf)
+- [A company memo example that includes printer usage instructions](docs/CompanyMemo.pdf)
+- [A Technical Description of a Baseball Glove](docs/TechnicalDescriptionGlove.pdf)  
 
 
-[jekyll-organization]: https://github.com/jekyll
+##### Other Writing
+  
+- [A Historical Research Paper presented at the Missouri Valley History Conference](docs/JohnCottonJrPuritanDeclensionModelorRadicalMissionary.pdf)
