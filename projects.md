@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-#### Thank you for visiting my portfolio page, please find examples of my work here.
+#### Thank you for visiting my projects page, please find examples of my work here.
 
 ---
 
