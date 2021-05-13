@@ -6,7 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+title: Welcome
 ---
-Welcome to my site!
 
 I am a support engineer with 10 years of experience and an aspiring technical writer. Here you can find examples of my work, my latest thoughts, and my contact information. Thank you for visiting.
