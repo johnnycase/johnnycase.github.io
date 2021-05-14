@@ -4,7 +4,7 @@ url: "https://johnnycase.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 title: John E Case                                      # site's title
-description: "John Case, blog and portfolio"            # used by search engines
+description: "blog and portfolio"            # used by search engines
 avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
@@ -12,7 +12,7 @@ favicon: assets/favicon.ico                             # Icon displayed in the 
 header_text: Welcome to my blog and portfolio           # Change Blog header text
 header_feature_image: assets/img/pexels/triangular.jpeg
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> | 
   Copyright 2021 John E Case
 
 # Blog
