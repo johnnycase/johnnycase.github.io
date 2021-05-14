@@ -1,6 +1,6 @@
 # Icons on the footer
 rss: true
-email_address: "johneverettcase@gmail.com"   # Full email address, e.g. "sam@example.com"
+email_address: johneverettcase@gmail.com   # Full email address, e.g. "sam@example.com"
 behance:
 bitbucket:
 dribbble:
@@ -10,7 +10,7 @@ gitlab:
 github: "johnnycase"
 instagram:
 keybase:
-linkedin: "https://www.linkedin.com/in/johnecase/"        # Full URL
+linkedin: https://www.linkedin.com/in/johnecase/        # Full URL
 pinterest:
 reddit:
 soundcloud:
