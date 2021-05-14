@@ -1,38 +1,69 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.modified_date -%}
-        ~ 
-        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-      {%- endif -%}
-      {%- if page.author -%}
-        • {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      {%- endif -%}</p>
+<article {% if page.feature-img or page.color %}class="feature-image" {% endif %}>
+  <header id="main" style="">
+    <div class="title-padder">
+      {% if page.hide_title %}
+      <div class="feature-image-padding"></div>
+      {% else %}
+      <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
+      {% include blog/post_info.html author=page.author date=page.date %}
+      {% endif %}
+    </div>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  <section class="post-content">
+  {% if page.bootstrap %}
+    <div class="bootstrap-iso">
+    {% endif %}
+      {{ content }}
+    {% if page.bootstrap %}
+    </div>
+  {% endif %}
+  </section>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <!-- Social media shares -->
+  {% include social/share_buttons.html %}
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+   <!-- Tag list -->
+  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
+  {% include default/tags_list.html tags=tag_list %}
+
 </article>
+
+<!-- Post navigation -->
+{% if site.post_navigation  or site.theme_settings.post_navigation %}
+{% include blog/post_nav.html %}
+{% endif %}
+
+<!-- Cusdis -->
+{% if site.cusdis_app_id %}{% include social/cusdis.html %}{% endif %}
+
+<!-- Disqus -->
+{% if site.disqus_shortname or site.theme_settings.disqus_shortname %}
+{% include social/disqus.html %}{% endif %}
+
+<!-- To change color of links in the page -->
+<style>
+  header#main {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+  {% if page.color %}
+  .feature-image a { color: {{ page.color }} !important; }
+  div#post-nav a { color: {{ page.color }} !important; }
+  footer a { color: {{ page.color }} !important; }
+  .site-header nav a:hover {  color: {{ page.color }} !important; }
+  header#main { 
+      background-color: {{ page.color }} !important;
+      background-image: url('{{ site.color_image | relative_url }}');
+  }
+  {% endif %}
+  
+  {% if page.feature-img %}
+  header#main { background-image: url('{{ page.feature-img | relative_url }}'); }
+  {% endif %}
+</style>

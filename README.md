@@ -1,322 +1,589 @@
-# minima
+# Type on Strap 🎨
 
-*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
+[![Build Status](https://travis-ci.org/sylhare/Type-on-Strap.svg?branch=master)](https://travis-ci.org/sylhare/Type-on-Strap)
+[![Gem Version](https://badge.fury.io/rb/type-on-strap.svg)](https://badge.fury.io/rb/type-on-strap)
+[![Docker Pulls](https://img.shields.io/docker/pulls/sylhare/type-on-strap)](https://hub.docker.com/r/sylhare/type-on-strap)
 
-***Disclaimer:** The information here may vary depending on the version you're using. Please refer to the `README.md` bundled
-within the theme-gem for information specific to your version or by pointing your browser to the Git tag corresponding to your
-version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md*  
-*Running `bundle show minima` will provide you with the local path to your current theme version.*
+[![Default Type on Strap blog](https://github.com/Sylhare/Type-on-Strap/blob/master/assets/img/screenshot.png?raw=true)](https://sylhare.github.io/Type-on-Strap/)
 
+A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Rohan Chandra [type-theme](https://github.com/rohanchandra/type-theme) packed with extra features and easily customizable:
 
-[Theme preview](https://jekyll.github.io/minima/)
+* Responsive design on all devices (🖥, 💻, 📱, ...)
+* Portfolio 🗂, Gallery 🖼 pages for your projects
+* Tags compatibility 🏷
+* Handle _Bootstrap_'ed pages: [Get Bootstrap](http://getbootstrap.com/)
+* 🔎 Search feature: [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+* Math Rendering : [KateX](https://github.com/Khan/KaTeX)
+* Diagram Rendering: [Mermaid-js](https://github.com/mermaid-js/mermaid)
+* 🖋 Nice fonts: [Font Awesome](https://fontawesome.com/), [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro), [Pacifico](https://fonts.google.com/specimen/Pacifico?selection.family=Pacifico) 
+* Seo Tags: [Jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+* 🛠 Syntax Highlighting: Easily customisable [Base16](https://github.com/chriskempson/base16)
+* 💡 Light and dark theme supported
+* Find free of rights images on [pexels](https://www.pexels.com/)
 
-![minima theme preview](/screenshot.png)
-
-## Installation
-
-Add this line to your Jekyll site's Gemfile:
-
-```ruby
-gem "minima"
-```
-
-And then execute:
-
-    $ bundle
-
-
-## Contents At-A-Glance
-
-Minima has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
-
-### Layouts
-
-Refers to files within the `_layouts` directory, that define the markup for your theme.
-
-  - `default.html` &mdash; The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says ` {{ content }} ` and are linked to this file via [FrontMatter](https://jekyllrb.com/docs/frontmatter/) declaration `layout: default`.
-  - `home.html` &mdash; The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
-  - `page.html` &mdash; The layout for your documents that contain FrontMatter, but are not posts.
-  - `post.html` &mdash; The layout for your posts.
-
-#### Home Layout
-
-`home.html` is a flexible HTML layout for the site's landing-page / home-page / index-page. <br/>
-
-##### *Main Heading and Content-injection*
-
-From Minima v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
-
-Usually the `site.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
-
-##### *Post Listing*
-
-This section is optional from Minima v2.2 onwards.<br/>
-It will be automatically included only when your site contains one or more valid posts or drafts (if the site is configured to `show_drafts`).
-
-The title for this section is `Posts` by default and rendered with an `<h2>` tag. You can customize this heading by defining a `list_title` variable in the document's front matter.
-
-
-### Includes
-
-Refers to snippets of code within the `_includes` directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.
-
-  - `disqus_comments.html` &mdash; Code to markup disqus comment box.
-  - `footer.html` &mdash; Defines the site's footer section.
-  - `google-analytics.html` &mdash; Inserts Google Analytics module (active only in production environment).
-  - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.
-  - `custom-head.html` &mdash; Placeholder to allow users to add more metadata to `<head />`.
-  - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here.
-  - `social.html` &mdash; Renders social-media icons based on the `minima:social_links` data in the config file.
-
-
-### Sass
-
-Refers to `.scss` files within the `_sass` directory that define the theme's styles.
-
-  - `minima/skins/classic.scss` &mdash; The "classic" skin of the theme. *Used by default.*
-  - `minima/initialize.scss` &mdash; A component that defines the theme's *skin-agnostic* variable defaults and sass partials.
-    It imports the following components (in the following order):
-    - `minima/custom-variables.scss` &mdash; A hook that allows overriding variable defaults and mixins. (*Note: Cannot override styles*)
-    - `minima/_base.scss` &mdash; Sass partial for resets and defines base styles for various HTML elements.
-    - `minima/_layout.scss` &mdash; Sass partial that defines the visual style for various layouts.
-    - `minima/custom-styles.scss` &mdash; A hook that allows overriding styles defined above. (*Note: Cannot override variables*)
-
-Refer the [skins](#skins) section for more details.
-
-
-### Assets
-
-Refers to various asset files within the `assets` directory.
-
-  - `assets/css/style.scss` &mdash; Imports sass files from within the `_sass` directory and gets processed into the theme's
-    stylesheet: `assets/css/styles.css`.
-  - `assets/minima-social-icons.svg` &mdash; A composite SVG file comprised of *symbols* related to various social-media icons.
-    This file is used as-is without any processing. Refer [section on social networks](#social-networks) for its usage.
-
-
-### Plugins
-
-Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
-
+> [Demo Site](https://sylhare.github.io/Type-on-Strap/)
 
 ## Usage
 
-Have the following line in your config file:
+### As a ruby gem 💎
 
-```yaml
-theme: minima
+Check out this tutorial: [Use as Ruby Gem](#use-as-ruby-gem-)
+
+### As a github page 📋
+
+1. Fork and clone the [Type on Strap repo](https://github.com/sylhare/Type-On-Strap): `git clone https://github.com/Sylhare/Type-on-Strap.git`
+2. Install [Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`, check [#1](https://github.com/Sylhare/Type-on-Strap/issues/1) if you have a problem.
+3. Install the theme's dependencies: `bundle install`
+4. Customize the theme
+	- GitHub Page: [update `_config.yml`](#site-configuration)
+5. Run the Jekyll server: `bundle exec jekyll serve`
+
+## Structure
+
+Here are the main files of the template
+
+```bash
+Type-on-Strap
+├── _includes	               # theme includes
+├── _layouts                   # theme layouts (see below for details)
+├── _portfolio	               # collection of article to be populated in the portfolio page
+├── _posts                     # Blog posts
+├── _sass                      # Sass partials 
+├── assets
+|  ├── js	               # theme javascript, Katex, jquery, bootstrap, jekyll search, 
+|  ├── css                     # isolated Bootstrap, font-awesome, katex and main css
+|  ├── fonts		       # Font-Awesome, and other fonts
+|  └── img		       # Images used for the template
+├── pages
+|   ├── 404.md		       # To be displayed when url is wrong
+|   ├── about.md               # About example page
+|   ├── gallery.md             # Gallery page for your photos
+|   ├── portfolio.md	       # Portfolio page for your projects
+|   ├── search.html	       # Search page
+|   └── tags.md                # The tag page
+├── _config.yml                # sample configuration
+├── _data.yml
+|  ├── authors.yml             # Update the post authors configurations 
+|  ├── language.yml            # Localization configuration
+|  └── social.yml              # Social configurations (RSS, Twitter, ...)
+└── index.html                 # sample home page (blog page paginated)
+```
+	
+## Configure Type on Strap 🛠
+
+Open `_config.yml` in a text editor to change most of the blog's settings.
+
+If a variable in this document is marked as "optional", disable the feature by removing all text from the variable. 
+
+
+### Site configuration
+
+Configure Jekyll as your own blog or with a "baseurl" in `_config.yml`:
+
+Jekyll website *without* a "baseurl" (such as a GitHub Pages website for a given username):
+
+```yml
+baseurl: ""
+url: "https://username.github.io"
 ```
 
+Jekyll website *with* "baseurl" (like the Type on Strap [demo](https://sylhare.github.io/Type-on-Strap/) page):
 
-### Customizing templates
+```yml
+baseurl: "/sub-directory"
+url: "https://username.github.io/"
+```
 
-To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+Please configure this  before using the theme.
 
-The site's default CSS has now moved to a new place within the gem itself, [`assets/css/style.scss`](assets/css/style.scss).
+### Meta and Branding
 
-In Minima 3.0, if you only need to customize the colors of the theme, refer to the subsequent section on skins. To have your
-*CSS overrides* in sync with upstream changes released in future versions, you can collect all your overrides for the Sass
-variables and mixins inside a sass file placed at `_sass/minima/custom-variables.scss` and all other overrides inside a sass file
-placed at path `_sass/minima/custom.scss`.
+Meta variables hold basic information about your Jekyll site which will be used throughout the site 
+and as meta properties for search engines, browsers, and the site's RSS feed.
 
-You need not maintain entire partial(s) at the site's source just to override a few styles. However, your stylesheet's primary
-source (`assets/css/style.scss`) should contain the following:
+Change these variables in `_config.yml`:
 
-  - Front matter dashes at the very beginning (can be empty).
-  - Directive to import a skin.
-  - Directive to import the base styles (automatically loads overrides when available).
+```yml
+title: My Jekyll Blog                 # Name of website
+avatar: assets/img/triangle.png       # Path of avatar image, to be displayed in the theme's header
+description: My blog posts            # Short description, primarily used by search engines
+favicon: assets/favicon.ico           # Icon displayed in the tab
+color_theme: auto                     # color theme auto, dark or light
+```
 
-Therefore, your `assets/css/style.scss` should contain the following at minimum:
+You can also customize the seo tags default option following the jekyll-seo-tag plugin [documentation](http://jekyll.github.io/jekyll-seo-tag/advanced-usage/).
+The color theme can be set to dark or light (customize it in _variables.scss_). 
+Using _auto_ you'll have a tiny icon in the navbar allowing the use to manually switch from dark to light theme.
 
-```sass
+### Theme customization 🎨
+
+#### Footer and Header's text
+
+Customize your site header/footer with these variables in `_config.yml`:
+
+```yml
+header_text: Welcome to my Jekyll blog
+header_feature_image: assets/img/sample3.png
+footer_text: Copyright 2017
+```
+
+If you don't want anything, replace the value by `" "`.
+
+#### Localisation string
+
+Localization string is a way to quickly change the template language for text like *Next Post* or *Follow on*, ...
+You can find all the properties in `_data/language.yml`.
+
+By default, it is in english, but you can easily add your own language.
+
+### Google Analytics
+
+To enable Google Analytics, add your [tracking ID](https://support.google.com/analytics/answer/1032385) 
+to `_config.yml` like so:
+
+```yml
+google_analytics: UA-NNNNNNNN-N
+```
+
+### Comments 
+
+#### Disqus
+
+Optionally, if you have a [Disqus](https://disqus.com/) account, you can show a 
+comments section below each post.
+
+To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) 
+to your project's `_config.yml` file:
+
+```yml
+disqus_shortname: my_disqus_shortname
+```
+
+#### Cusdis
+
+[Cusdis](https://cusdis.com/) is an open source alternative to Disqus.
+You can read more about it in the [documentation](https://cusdis.com/doc#/)
+
+To enable it, set your cusdis name in `_config.yml`:
+
+```yaml
+cusdis_app_id: my_data-app-id                                     
+```
+
+### Math typesetting with KateX
+
+When KateX is set in `_config.yml`:
+
+```yml
+katex: true # to enable it
+```
+
+You can then wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable 
+in `_config.yml` to `true` for math typesetting.
+
+For inline math typesetting, type your math expression on the *same line* as your content. For example:
+
+```latex
+Type math within a sentence $$2x^2 + x + c$$ to display inline
+```
+
+For display math typesetting, type your math expression on a *new line*. For example:
+
+```latex
+$$
+  \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
+$$
+```
+
+You can find a cheat sheet of the compatible LaTex symbols [online](https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols).
+
+### Diagrams with Mermaid
+
+Enable the [mermaid-js](https://github.com/mermaid-js/mermaid) diagram rendering by setting mermaid to true in the `_config.yml`.
+This will load and init the [mermaid.min.js](https://mermaid-js.github.io/mermaid/getting-started/n00b-gettingStarted.html#4-calling-mermaid-from-a-relative-link).
+
+```yml
+mermaid: true # to Enable it
+```
+
+Find all the help you need on the official [mermaid documentation](https://mermaid-js.github.io/mermaid/).
+You can create with ease diagrams. Add your mermaid script inside two mermaid divs (default Kramdown does not yet support mermaid).
+With the `class="mermaid"` inside the `<div>`:
+
+```html
+<div class="mermaid">
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+</div>
+```
+
+### Social icons
+
+In `_data/social.yml` you can customize the social icons from other website you wish to display in the blog.
+The site icons come from [Font Awesome](https://fontawesome.com/).
+
+### Cookie consent
+
+You can add a cookie consent with a disclaimer if you use Google Analytics while respecting the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).
+Set to true, there will be a banner at the bottom of the page with the disclaimer, and an _approve_ button.
+Once the user clicks on "Approve" the cookies will be created for Google Analytics.
+
+#### Share in article
+
+The share icons are the one at the bottom of the blog page if enabled, 
+to share the article on those platform.
+
+#### Footer
+
+Display in the footer. 
+All icon variables should be your username enclosed in quotes (e.g. "username") in `_data/social.yml`, 
+except for the following variables:
+
+```yml
+rss: true                                                   
+email_address: type@example.com
+linkedin: https://www.linkedin.com/in/FirstLast
+stack_exchange: https://stackexchangecom/users/0000/first-last
+stack_overflow: https://stackoverflow.com/users/0000/first-last
+youtube: UCqECaJ8Gagnn7YCbPEzWH6g  # Youtube token of your channel in the url 
+```
+
+You can update the RSS settings in `_data/social` to change the default feed path (generated by [jekyll-feel](https://github.com/jekyll/jekyll-feed)).
+
+### Personalize your Blog Posts 📝
+
+When writing a post, be sure in jekyll to:
+ - Put it in the `_posts` folder
+ - Name it with the date first like `2019-08-21-This-is-my-blog-post.md`
+
+Please refer to the [Jekyll docs for writing posts](https://jekyllrb.com/docs/posts/). 
+
+#### Layout: Post
+
+These are the basic features you can use with the `post` layout.
+
+```yml
+
 ---
+layout: post
+title: Hello World                                # Title of the page
+hide_title: true                                  # Hide the title when displaying the post, but shown in lists of posts
+feature-img: "assets/img/sample.png"              # Add a feature-image to the post
+thumbnail: "assets/img/thumbnails/sample-th.png"  # Add a thumbnail image on blog view
+color: rgb(80,140,22)                             # Add the specified color as feature image, and change link colors in post
+bootstrap: true                                   # Add bootstrap to the page
+tags: [sample, markdown, html]
+---
+```
+
+With `thumbnail`, you can add a smaller image than the `feature-img`. 
+If you don't have a thumbnail you can still use the same image as the feature one. Or use the gulp task to create it.
+
+The background used when `color` is set comes from `lineart.png` from [xukimseven](https://github.com/xukimseven) 
+you can edit it in the config file (`_config.yml > color_image`). If you want another one, put it in `/assets/img` as well. 
+
+The **bootstrap** is not mandatory and is only useful if you want to add bootstrapped content in your page. 
+It will respect the page and theme layout, mind the padding on the sides.
+
+#### Post excerpt
+
+The [excerpt](https://jekyllrb.com/docs/posts/#post-excerpts) are the first lines of an article that is display on the blog page. 
+The length of the excerpt has a default of around `250` characters or can be manually set in the post using:
+
+in `conflig.yml`:
+
+```yml
+excerpt: true
+```
+
+Then in your post, add the `excerpt separator`:
+
+```yml
+
+---
+layout: post
+title: Sample Page
+excerpt_separator: <!--more-->
 ---
 
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
-@import "minima/initialize";
+some text in the excerpt
+<!--more-->
+... rest of the text not shown in the excerpt ...
 ```
 
-#### Skins
+The html is stripped out of the excerpt, so it only displays text.
 
-Minima 3.0 supports defining and switching between multiple color-palettes (or *skins*).
+#### Image aligner
 
-```
-.
-├── minima.scss
-└── minima
-    └── _syntax-highlighting.scss
-```
+To easily add align images side by side in your article using the `aligner.html` include:
 
-
-A skin is a Sass file placed in the directory `_sass/minima/skins` and it defines the variable defaults related to the "color"
-aspect of the theme. It also embeds the Sass rules related to syntax-highlighting since that is primarily related to color and
-has to be adjusted in harmony with the current skin.
-
-The default color palette for Minima is defined within `_sass/minima/skins/classic.scss`. To switch to another available skin,
-simply declare it in the site's config file. For example, to activate `_sass/minima/skins/dark.scss` as the skin, the setting
-would be:
-
-```yaml
-minima:
-  skin: dark
+```ruby
+{% include aligner.html images="path/to/img1.png,path/to/img2.png,path/to/img3.png" column=3 %}
 ```
 
-As part of the migration to support skins, some existing Sass variables have been retired and some **have been redefined** as
-summarized in the following table:
+Use it in any markdown file. There are two fields in the _include_ you need to look into:
+  - _images_: Takes a string separated with `,` of all the images' path. 
+    - It by default look into `assets/img/` so give the path from there.
+  - _column_: (OPTIONAL) Set the number of column you want your imaged displayed in.
+    - default is 2 columns
+    - `column=3` set 3 columns
+    - `column="auto"` makes as many columns as images
 
-Minima 2.0      | Minima 3.0
---------------- | ----------
-`$brand-color`  | `$link-base-color`
-`$grey-*`       | `$brand-*`
-`$orange-color` | *has been removed*
+#### Code highlight
 
-##### Available skins
+Like all CSS variables in the theme, you can edit the color of the code highlight in *_sass > base > _variables.scss*.
+The code highlighting works with [base16](https://github.com/chriskempson/base16-html-previews/tree/master/css) you can find existing example 
+of your favourite highlight color scheme on this format.
 
-- classic
-- dark
-- solarized
-- solarized-dark
+## Feature pages and layouts 
 
-### Customize navigation links
+All feature pages besides the "home" one are stored in the `page` folder, 
+they will appear in the navigation bar unless you set `Hide: true` in the front matter. 
 
-This allows you to set which pages you want to appear in the navigation area and configure order of the links.
+Here are the documentation for the other feature pages that can be added through `_config.yml`. 
 
-For instance, to only link to the `about` and the `portfolio` page, add the following to your `_config.yml`:
+Non-standard features are documented below.
 
-```yaml
-header_pages:
-  - about.md
-  - portfolio.md
+### Layout: Default
+
+This layout includes the head, navigation bar and footer around your content. 
+Unless you're making a custom layout you won't need it.
+
+### Layout: Home 🏡
+
+This page is used as the home page of the template (in the `index.html`). It displays the list of articles in `_posts`.
+You can use this layout in another page (adding a title to it will make it appear in the navigation bar).
+
+The recommended width and height for the home picture is width:`2484px;` and height:`1280px` 
+which are the dimensions of the actual picture for it to be rolling down as you scroll the page.
+
+If your posts are not displaying ensure that you have added the line `paginate: 5` to `_config.yml`.
+
+### Layout: Page 📄
+
+The page layout have a bit more features explained here.
+
+```yml
+
+---
+layout: page
+title: "About" 
+subtitle: "This is a subtitle"   
+feature-img: "assets/img/sample.png" 
+permalink: /about.html               # Set a permalink your your page
+hide: true                           # Prevent the page title to appear in the navbar
+icon: "fa-search"                    # Will Display only the fontawesome icon (here: fa-search) and not the title
+tags: [sample, markdown, html]
+---
 ```
 
+The hide only hides your page from the navigation bar, it is however still generated and can be access through its link. 
 
-### Change default date format
+### Feature: Portfolio 🗂
 
-You can change the default date format by specifying `site.minima.date_format`
-in `_config.yml`.
+Portfolio is a feature page that will take all the markdown/html files in the `_portfolio` folder to create a 3-columns image portfolio matrix.
 
-```
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
-  date_format: "%b %-d, %Y"
-```
+To use the portfolio, simply create a `portfolio.md` with this information inside:
 
+```yml
 
-### Extending the `<head />`
+--- 
+layout: page
+title : Portfolio 
+---
 
-You can *add* custom metadata to the `<head />` of your layouts by creating a file `_includes/custom-head.html` in your source directory. For example, to add favicons:
-
-1. Head over to [https://realfavicongenerator.net/](https://realfavicongenerator.net/) to add your own favicons.
-2. [Customize](#customization) default `_includes/custom-head.html` in your source directory and insert the given code snippet.
-
-
-### Enabling comments (via Disqus)
-
-Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
-
-To enable it, add the following lines to your Jekyll site:
-
-```yaml
-  disqus:
-    shortname: my_disqus_shortname
+{% include default/portfolio.html %}
 ```
 
-You can find out more about Disqus' shortnames [here](https://help.disqus.com/installation/whats-a-shortname).
+#### Portfolio posts
 
-Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`
+You can format the portfolio posts in the `_portfolio` folder using the `post layout`. Here are little explaination on some of the possible feature you can use and what they will do.
 
-If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
+If you decide to use a date, please be sure to use one that can be parsed such as `yyyy-mm-dd`. You can see more format example on the demo posts that are available for the theme:
 
-:warning: `url`, e.g. `https://example.com`, must be set in you config file for Disqus to work.
+```yml
 
-### Author Metadata
-
-From `Minima-3.0` onwards, `site.author` is expected to be a mapping of attributes instead of a simple scalar value:
-
-```yaml
-author:
-  name: John Smith
-  email: "john.smith@foobar.com"
+---
+layout: post
+title: Circus				       # Title of the portfolio post
+feature-img: "assets/img/portfolio/cake.png"   # Will display the image in the post
+img: "assets/img/portfolio/cake.png"           # Will display the image in the portfolio page
+date: 2019-07-25		 	       # Not mandatory, however needs to be in date format to display the date
+---
 ```
 
-To migrate existing metadata, update your config file and any reference to the object in your layouts and includes as summarized below:
+#### Portfolio in gem
 
-Minima 2.x    | Minima 3.0
-------------- | -------------------
-`site.author` | `site.author.name`
-`site.email`  | `site.author.email`
+Make sure your `_config.yml` contains the following if you are using the theme as a gem:
 
+```yml
+# PORTFOLIO
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+```    
 
-### Social networks
+This creates the collection for Jekyll, so it can find and display your portfolio posts.
 
-You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your config.
-From `Minima-3.0` onwards, the usernames are to be nested under `minima.social_links`, with the keys being simply the social-network's name:
+### Feature: Gallery 🖼
 
-```yaml
-minima:
-  social_links:
-    twitter: jekyllrb
-    github: jekyll
-    stackoverflow: "11111"
-    dribbble: jekyll
-    facebook: jekyll
-    flickr: jekyll
-    instagram: jekyll
-    linkedin: jekyll
-    pinterest: jekyll
-    telegram: jekyll
-    microdotblog: jekyll
-    keybase: jekyll
+You can create a gallery using [Masonry JS](https://masonry.desandro.com/) which will placing the pictures in optimal position 
+based on available vertical space. 
+You need to specify the `gallery_path` which will be used to find the pictures to render. 
+It will take all the pictures under that directory. Then use the `include` to add it in your page. 
 
-    mastodon:
-     - username: jekyll
-       instance: example.com
-     - username: jekyll2
-       instance: example.com
+```yml
 
-    gitlab:
-     - username: jekyll
-       instance: example.com
-     - username: jekyll2
-       instance: example.com
+---
+layout: page
+title: Gallery
+gallery: "assets/img/pexels"
+---
 
-    youtube: jekyll
-    youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    youtube_channel_name: CloudCannon
+{% include default/gallery.html gallery_path=page.gallery %}
 ```
 
 
-### Enabling Google Analytics
+### Feature: Search 🔍
 
-To enable Google Analytics, add the following lines to your Jekyll site:
+The search feature is based on [Simple-Jekyll-search](https://github.com/christian-fei/Simple-Jekyll-Search) 
+there is a `search.json` file that will create a list of all the site posts, pages and portfolios. 
 
-```yaml
-  google_analytics: UA-NNNNNNNN-N
+Then there's a `search.js` displaying the formatted results entered in the `search.html` page.
+
+The search page can be hidden with the `hide` option. You can remove the icon by removing `icon`:
+
+```yml
+
+---
+layout: search
+title: Search
+icon: "search"
+---
 ```
 
-Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
+### Feature: Tags 🏷
 
-### Enabling Excerpts on the Home Page
+Tags should be placed between `[]` in your post metadata. Separate each tag with a comma. 
+Tags are recommended for posts and portfolio items.
 
-To display post-excerpts on the Home Page, simply add the following to your `_config.yml`:
+For example:
 
-```yaml
-show_excerpts: true
+```yml
+
+---
+layout: post
+title: Markdown and HTML
+tags: [sample, markdown, html]
+---
 ```
 
+> Tags are case-sensitive `Tag_nAme` ≠ `tag_name`
 
-## Contributing
+All the tags will be listed in `tags.html` with a link toward the pages or posts.
+The Tag page can be hidden with the `hide` option. You can remove the icon by removing `icon` (like for the search page).
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+## Advanced
 
-## Development
+### Liquid tags
 
-To set up your environment to develop this theme, run `script/bootstrap`.
+Jekyll works with [liquid](https://shopify.github.io/liquid/) tags usually represented by:
 
-To test your theme, run `script/server` (or `bundle exec jekyll serve`) and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme and the contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
+```
+{{ liquid.tag | filter }}
+```
+
+These are useful to render your jekyll files. 
+You can learn more about them on [shopify's doc](https://help.shopify.com/themes/liquid/basics)
+
+### Gulp toolbox
+
+#### Requirements
+
+Before you need to have *node* and `npm` installed:
+
+- Windows: https://nodejs.org/
+- Ubuntu/Debian: `apt-get install nodejs npm libgl1 libxi6`
+- Fedora (dnf) / RHEL/CentOS (yum): `dnf install node npm libglvnd-glx libXi`
+
+Then you need to install [`gulp-cli`](https://gulpjs.com/) and its dependencies:
+
+```bash
+cd assets/
+sudo npm install gulp-cli -g
+npm install
+```
+
+#### Minimizing and optimizing: css, js and images
+
+You can run the default task that will compress the js, css and images and create the thumbnails for the supported image
+formats:
+
+```bash
+cd assets/
+gulp default
+gulp thumbnails-all # to create all of the images thumbnails
+gulp thumbnails     # to create thumbnails for the feature-img/ only
+# tip: run a git status to see the changes
+git status
+```
+
+You can find more about the gulp tasks in the [gulpfile.js](assets/gulpfile.js).
+
+#### Create a post
+
+To create a `.md` file in the *_posts/* section with the jekyll format of today's date.
+Use this command with the title you'd like to create the very basic post.
+
+```bash
+gulp post -n 'title of the post'
+```
+
+A file will be created following the format `yyyy-mm-dd-title-of-the-post.md` with default post attributes inside.
+Nothing will happen if the file exists already.
+
+### Use as Ruby Gem 💎
+
+You can use Type-on-strap as a [gem](https://rubygems.org/gems/type-on-strap). 
+
+Ruby Gem Method
+Add this line to your Jekyll site's Gemfile (or create one):
+
+```ruby
+gem "type-on-strap"
+```
+
+Add this line to your Jekyll site's `_config.yml` file:
+
+```yml
+theme: type-on-strap
+```
+
+Then run Bundler to install the theme gem and dependencies:
+
+```bash
+bundle install
+```
+
+Then you can start adding content like:
+  - Add a `index.html` file
+  - Add the feature page you want. (ex: as it is already in `pages`)
+  - Add posts in `_posts` and `_portfolio` to be displayed
+
+### Remote Theme
+
+Now you can use any theme gem with GitHub pages with [29/11/2017 Github Pages Broadcast](https://github.com/blog/2464-use-any-theme-with-github-pages).
+For that remove all `theme:` attributes from `_config.yml` and add instead:
+
+```yml
+remote_theme: sylhare/Type-on-Strap 
+```
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+This theme is licensed under the [The MIT License (MIT)](/LICENSE)
+
+- Pictures from [Pexels](https://www.pexels.com/) are under Creative Commons Zero (CC0) license
+- Fonts are licensed under the [SIL Open Font License (OFL)](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) 
