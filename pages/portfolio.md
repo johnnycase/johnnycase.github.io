@@ -3,7 +3,7 @@ layout: page
 title : Portfolio 
 permalink: /portfolio/
 subtitle: "Writing Samples" 
-feature-img: "assets/img/pexels/code.jpg"
+feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Archive]
 ---
 
