@@ -6,9 +6,6 @@ subtitle: "Writing Samples"
 feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Archive]
 ---
-#### Thank you for visiting my portfolio page, please find examples of my work here.
-
----
 
 ##### Technical Documentation
 
@@ -24,5 +21,3 @@ tags: [Archive]
 ##### Other Writing
   
 - [A Historical Research Paper presented at the Missouri Valley History Conference](_portfolio/JohnCottonJrPuritanDeclensionModelorRadicalMissionary.pdf)
-
-#{% include portfolio.html %}
