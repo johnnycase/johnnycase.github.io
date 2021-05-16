@@ -5,7 +5,7 @@ url: "https://johnnycase.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: John E Case                                      # site's title
 description: "blog and portfolio"            # used by search engines
-avatar: assets/img/bitmoji.jpeg                         # Empty for no avatar in navbar
+avatar: assets/img/bitmoji.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
