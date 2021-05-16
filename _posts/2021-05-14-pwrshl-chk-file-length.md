@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Powershell — Compare File Length"
-date:   2021-05-12 10:12:00 -0500
+date:   2021-05-14 22:52:00 -0500
 categories: post
 ---
 
