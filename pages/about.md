@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "assets/img/pexels/trees.jpg"
+feature-img: "assets/img/pexels/aurora.jpg"
 tags: [About, Archive]
 ---
 
