@@ -12,8 +12,6 @@ tags: [Archive]
 - [How To Setup a File Transfer Script Using Psftp](/PsftpAutomation.pdf)    
 - [How to create a csv extract file with a SQL query](/Createcsvfromsqlquery.pdf)  
 - [How to configure an IIS web application](/HowtoConfigureanIISWebApplication.pdf)
-- [Guidelines for file transfer scripts and protocols](/FileTransferDoc.pdf)
-- [GPG Encryption Setup for Windows](/GPGEncryptionDoc.pdf)
 - [A company memo example that includes printer usage instructions](/CompanyMemo.pdf)
 - [A Technical Description of a Baseball Glove](/TechnicalDescriptionGlove.pdf)  
 
