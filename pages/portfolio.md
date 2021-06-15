@@ -7,6 +7,11 @@ feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Archive]
 ---
 
+##### Mozilla Knowledge Base Contributions
+
+- [Write Articles for the Knowledge Base](https://support.mozilla.org/en-US/kb/write-articles-knowledge-base)
+- [Update Firefox to the Latest Release](https://support.mozilla.org/en-US/kb/update-firefox-latest-release)
+
 ##### Technical Documentation
 
 - [How To Setup a File Transfer Script Using Psftp](/PsftpAutomation.pdf)    
