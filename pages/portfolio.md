@@ -8,7 +8,7 @@ tags: [Archive]
 ---
 
 ##### Open Source Documentation
-- [Project Contour](https://github.com/projectcontour/contour)
+- [Project Contour: Add a Troubleshooting Page](https://github.com/projectcontour/contour/pull/3830)
 
 ##### Mozilla Knowledge Base Contributions
 
