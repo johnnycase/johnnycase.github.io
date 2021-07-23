@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Git Primer for Beginners"
+title:  "Git - Add the workflow scope to your Personal Access Token"
 date:   2021-07-22 14:22:00 -0500
 categories: post
 ---
