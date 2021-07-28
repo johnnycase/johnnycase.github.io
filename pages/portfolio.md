@@ -7,6 +7,9 @@ feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Archive]
 ---
 
+##### Freelance Technical Writing
+- [5 PowerShell Script Examples To Inspire You to Get Scripting](https://adamtheautomator.com/powershell-script-examples/)
+
 ##### Open Source Documentation
 - [Project Contour: Add a Troubleshooting Page](https://github.com/projectcontour/contour/pull/3830)
 - [Project Contour: Accessibility Assessment PR 1](https://github.com/projectcontour/contour/pull/3917)
