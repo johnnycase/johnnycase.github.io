@@ -9,6 +9,7 @@ tags: [Archive]
 
 ##### Freelance Technical Writing
 - [5 PowerShell Script Examples To Inspire You to Get Scripting](https://adamtheautomator.com/powershell-script-examples/)
+- [A Beginner's Guide to Managing Files with PowerShell](https://adamtheautomator.com/powershell-write-to-file-2/)
 
 ##### Open Source Documentation
 - [Project Contour: Add a Troubleshooting Page](https://github.com/projectcontour/contour/pull/3830)
