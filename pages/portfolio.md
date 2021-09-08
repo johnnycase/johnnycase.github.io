@@ -14,12 +14,7 @@ tags: [Archive]
 ##### Open Source Documentation
 - [Project Contour: Add a Troubleshooting Page](https://github.com/projectcontour/contour/pull/3830)
 - [Project Contour: Accessibility Assessment PR 1](https://github.com/projectcontour/contour/pull/3917)
-- [Project Contour: Accessibility Assessment PR2](https://github.com/projectcontour/contour/pull/3957)
-
-##### Mozilla Knowledge Base Contributions
-
-- [Write Articles for the Knowledge Base](https://support.mozilla.org/en-US/kb/write-articles-knowledge-base)
-- [Update Firefox to the Latest Release](https://support.mozilla.org/en-US/kb/update-firefox-latest-release)
+- [Project Contour: Accessibility Assessment PR 2](https://github.com/projectcontour/contour/pull/3957)
 
 ##### Technical Documentation
 
