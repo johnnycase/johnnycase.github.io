@@ -5,7 +5,7 @@ date:   2021-07-28 16:39:00 -0500
 categories: post
 ---
 
-If you have every forked a repository on github, you have likely encountered the terms **merge** and **rebase** when researching how to interact with the original repository. Merging and rebasing are two different methods to solve the same problem, namely, how to keep your fork in sync with the original repository. This post will cover how and when to use rebase, but keep in mind there are specific scenarios in which to use either method.
+If you have ever forked a repository on github, you have likely encountered the terms **merge** and **rebase** when researching how to interact with the original repository. Merging and rebasing are two different methods to solve the same problem, namely, how to keep your fork in sync with the original repository. This post will cover how and when to use rebase, but keep in mind there are specific scenarios in which to use either method.
 
 So let's say you have forked a github repository so you can contribute some code or documentation. You create a branch of your fork, make your changes, and prepare to make a pull request. But you realize, the original repository has moved on since your fork, meaning, other developers have made commits to it that you don't have on your local copy. You will need to add those changes to your local copy before making a pull request. 
 
