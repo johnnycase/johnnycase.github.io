@@ -7,6 +7,9 @@ feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Archive]
 ---
 
+##### Data Analytics
+- [Divvy BikeShare Data Visualization](https://public.tableau.com/app/profile/john.case6922/viz/DivvyRiderDataSep2021-Aug2022/Sheet1#1)
+
 ##### Freelance Technical Writing
 - [5 PowerShell Script Examples To Inspire You to Get Scripting](https://adamtheautomator.com/powershell-script-examples/)
 - [A Beginner's Guide to Managing Files with PowerShell](https://adamtheautomator.com/powershell-rename/)
