@@ -1,49 +1,60 @@
-# SITE CONFIGURATION
-baseurl: ""
-url: "https://johnnycase.github.io"
+title: John Case
+author:
+  name: John Case
+  email: johneverettcase@gmail.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  Teacher, Writer, Helper
 
-# THEME-SPECIFIC CONFIGURATION
-title: John Everett Case                               # site's title
-description: "blog and portfolio"                      # used by search engines
-avatar: assets/img/bitmoji.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                            # Icon displayed in the tab
+show_excerpts: false # set to true to show excerpts on the homepage
 
-# Header and footer text
-header_text: Hello, my name is John Everett Case, I help people understand software.           # Change Blog header text
-header_feature_image: assets/img/pexels/triangular.jpeg
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> | 
-  Copyright 2021 John E Case
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+  #skin: solarized
 
-# Blog
-excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
-post_navigation: true
-color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
+  # generate social links in footer
+  social_links:
+    # twitter: lejohncase
+    github:  johnnycase
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    linkedin: johnecase
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
 
-# Features
-# More in the _data folder for social icons, share buttons, author and language
-# For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
-katex: true                                             # Enable if using math markup
-mermaid: true                                           # Enable mermaid-js for sequence and diagrams
-google_analytics: UA-234343931-1                                      # Tracking ID, e.g. "UA-000000-01"
-cookie_consent: false                                   # To respect the usage of cookies
-disqus_shortname:                                       # Your discus shortname for comments
-cusdis_app_id:                                          # Your cusdis data-app-id
-color_theme: auto                                       # auto, dark or light
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
 
-# PAGINATION
-paginate: 5
-paginate_path: "/blog/page:num"
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
 
-# PORTFOLIO
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:name
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+ - about.md
+ - projects.md
 
-# BUILD SETTINGS
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-exclude: [".jekyll-cache", ".idea", "vendor/*", "assets/node_modules/*"]
+# Build settings
+theme: minima
 
-# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
-remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
