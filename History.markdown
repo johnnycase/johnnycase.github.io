@@ -1,12 +1,12 @@
-## HEAD
+## Portfolio
 
-### Documentation
+### Technical Writing
 
-  * Forward port v2.5.1 release (#399)
-  * Docs: remove Google+ (#373)
-  * Update README section on adding favicons to site (#438)
+  * [Docker Desktop for macOS](https://adamtheautomator.com/docker-for-mac/)
+  * [PowerShell Basics](https://adamtheautomator.com/powershell-script-examples/)
+  * [PowerShell File Management](https://adamtheautomator.com/powershell-rename/)
 
-### Minor Enhancements
+### Tableau Visualizations
 
   * Add Keybase to social links (#400)
   * Solarized skins (#404)
@@ -29,7 +29,7 @@
   * Extract more color rules into skins (#452)
   * Introduce &#34;Dark Minima&#34; skin (#335)
 
-### Major Enhancements
+### Kaggle Notebooks
 
   * Allow skins to be defined and customized easily (#336)
   * Drop support for scalar &#39;author&#39; configuration (#384)
