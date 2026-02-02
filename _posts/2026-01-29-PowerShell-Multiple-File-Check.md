@@ -1,5 +1,9 @@
 ---
 layout: post
+title: "PowerShell - Check for Multiple Files"
+categories: PowerShell
+author:
+- John Case
 ---
 In PowerShell, checking for a file is as simple as using the Test-Path command with the file path. Followed by an if statement, this is a great tool to check when a file exists. If the result of Test-Path is stored in a variable, this can be used to evaluate the result and proceed, as necessary.
 
