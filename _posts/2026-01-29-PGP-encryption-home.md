@@ -1,5 +1,8 @@
 ---
-layout: post
+title: "PGP Home Directories"
+categories: PGP
+author:
+- John Case
 ---
 
 PGP is used as back-end encryption for many applications and processes, as such, it’s necessary to have a reusable key implementation routine. This is where the home directory comes in; the home directory can be used to cache keys for repeated use even when the user executing the task does not own the keys.
