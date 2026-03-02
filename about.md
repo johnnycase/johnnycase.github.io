@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is Unemployed Philosopher, the portfolio site for me, John Everett Case. 
+Welcome to my technical blog and portfolio site. 
 
-You can find my full resume and work history on my Linkedin:
+You can find my full resume and work history on Linkedin:
 [linkedin](https://www.linkedin.com/in/johnecase)
 
 You can find my current coding projects on GitHub:
