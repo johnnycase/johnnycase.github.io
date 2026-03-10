@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git - How to Rebase a Fork"
-categories: Git
+categories: Git Github
 author:
 - John Case
 ---
